@@ -1,0 +1,43 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.Python
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Database (local data, not for version control)
+data/job_search.db
+data/*.db
+data/backups/
+
+# Exports
+*.csv
+exports/
+
+# Node / Web UI
+web/node_modules/
+web/dist/
+web/.vite/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local credential reference mappings
+credentials.json
+
+# Real resume data — only resume_config.example.json is committed
+resume_config.json

@@ -1,0 +1,17 @@
+#!/bin/bash
+# Job Search Automation CLI Wrapper
+# Usage: ./jobsearch [arguments]
+# Example: ./jobsearch --display
+# Example: ./jobsearch --search-profile hands_on --match --display
+
+# Get the directory where this script is located
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Activate virtual environment
+source "$SCRIPT_DIR/venv/bin/activate"
+
+# Run the CLI with all passed arguments
+python "$SCRIPT_DIR/src/cli.py" "$@"
+
+# Deactivate virtual environment (optional, happens automatically when script exits)
+deactivate 2>/dev/null || true
